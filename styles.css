@@ -544,7 +544,15 @@ h2 {
   .nav { padding-left: 18px; }
   .nav-links { display: none; }
   .photo-wrap { max-width: 200px; }
-  .photo-tag { right: -40px; bottom: 16px; }
+  /* 이름표를 사진 위에 겹치지 않고 사진 오른쪽 빈 공간에 둔다 */
+  .photo-tag {
+    left: calc(100% + 14px);
+    right: auto;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: calc(100vw - 32px - 100% - 14px);
+    padding: 10px 12px;
+  }
   .stats { grid-template-columns: 1fr; }
   .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
   .stat { flex-direction: row; align-items: baseline; gap: 12px; padding: 18px 22px; }
