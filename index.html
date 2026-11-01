@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박정언 Jungun Park</title>
+  <meta name="description" content="스마트 컨트랙트 보안을 공부하는 순천향대 핀테크랩 학부연구생 박정언의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="박정언 Jungun Park">
+  <meta property="og:description" content="스마트 컨트랙트 보안을 공부하는 학부연구생. 금융 규칙을 컨트랙트로 옮기고 테스트로 남깁니다.">
+  <meta property="og:image" content="https://andrewpark-hub.github.io/assets/profile.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- 새로고침할 때 화면이 깜빡이지 않게 테마와 언어를 먼저 정한다 -->
+  <script>
+    try {
+      var savedTheme = localStorage.getItem("theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+      if (localStorage.getItem("lang") === "en") document.documentElement.classList.add("en");
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- ===== 상단 메뉴 ===== -->
+  <header class="nav">
+    <a class="logo" href="#top">jungun<span>.park</span></a>
+    <nav class="nav-links">
+      <a href="#projects"><span class="ko">프로젝트</span><span class="en">Projects</span></a>
+      <a href="#journey"><span class="ko">경험</span><span class="en">Journey</span></a>
+      <a href="#writing"><span class="ko">기록</span><span class="en">Writing</span></a>
+    </nav>
+    <div class="nav-tools">
+      <button class="tool-btn" id="langBtn" type="button" aria-label="언어 바꾸기">
+        <span class="ko">EN</span><span class="en">KO</span>
+      </button>
+      <button class="tool-btn" id="themeBtn" type="button" aria-label="테마 바꾸기">◐</button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== 첫 화면 ===== -->
+    <section class="hero">
+      <div class="glow"></div>
+      <div class="hero-text reveal">
+        <p class="status"><span class="dot"></span>
+          <span class="ko">2026.11 ~ 12 iM뱅크 AI 트렌드세터 참여</span>
+          <span class="en">Nov to Dec 2026, iM Bank AI Trendsetter program</span>
+        </p>
+        <p class="mono tagline">// smart contract · blockchain · stablecoin</p>
+        <h1>
+          <span class="ko">안녕하세요,<br><span class="grad">박정언</span>입니다.</span>
+          <span class="en">Hi, I'm<br><span class="grad">Jungun Park</span>.</span>
+        </h1>
+        <p class="lead ko">
+          순천향대 컴퓨터소프트웨어공학과 3학년이고, 핀테크랩 학부연구생으로 스테이블코인 동결 권한에 대한 논문을 준비하고 있습니다.
+          기사나 기획서에서 금융 규칙 하나를 골라 스마트 컨트랙트로 옮기고, 처음 만든 버전이 깨지는 경우를 테스트로 남기면서 공부합니다.
+        </p>
+        <p class="lead en">
+          I'm a third-year Computer Software Engineering student at Soonchunhyang University and an undergraduate researcher at the Fintech Lab, writing a paper on stablecoin freeze powers.
+          I pick one financial rule from a news article or a plan, write it as a smart contract, and keep the cases where my first version breaks as tests.
+        </p>
+        <div class="hero-btns">
+          <a class="btn primary" href="https://github.com/Andrewpark-hub" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://www.linkedin.com/in/%EC%A0%95%EC%96%B8-%EB%B0%95-975ab1323/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="photo-wrap reveal">
+        <div class="photo-ring"></div>
+        <img class="photo" src="assets/profile.jpg" alt="박정언 사진" width="558" height="720">
+        <div class="photo-tag mono">Fintech Lab<br><span>@ Soonchunhyang Univ.</span></div>
+      </div>
+    </section>
+
+    <!-- ===== 숫자 ===== -->
+    <section class="stats reveal">
+      <div class="stat">
+        <strong>8</strong>
+        <span class="ko">공개 저장소</span><span class="en">public repos</span>
+      </div>
+      <div class="stat">
+        <strong>87</strong>
+        <span class="ko">테스트, 전부 통과</span><span class="en">tests, all passing</span>
+      </div>
+      <div class="stat">
+        <strong>19</strong>
+        <span class="ko">링크드인 학습 기록</span><span class="en">LinkedIn study posts</span>
+      </div>
+    </section>
+
+    <!-- ===== 기술 띠 ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track mono">
+        <span>Java</span><span>Kotlin</span><span>Spring Boot</span><span>web3j</span><span>Solidity</span><span>Foundry</span><span>EIP-712</span><span>Circom</span><span>snarkjs</span><span>Slither</span><span>ethers.js</span><span>Python</span><span>Hyperledger Indy</span><span>Docker</span>
+        <span>Java</span><span>Kotlin</span><span>Spring Boot</span><span>web3j</span><span>Solidity</span><span>Foundry</span><span>EIP-712</span><span>Circom</span><span>snarkjs</span><span>Slither</span><span>ethers.js</span><span>Python</span><span>Hyperledger Indy</span><span>Docker</span>
+      </div>
+    </div>
+
+    <!-- ===== 공부하는 방식 ===== -->
+    <section class="section reveal">
+      <p class="eyebrow mono">01 / how i study</p>
+      <h2><span class="ko">저장소마다 같은 순서로 만듭니다</span><span class="en">Every repo follows the same four steps</span></h2>
+      <ol class="steps">
+        <li>
+          <span class="step-no mono">STEP 1</span>
+          <b class="ko">규칙 고르기</b><b class="en">Pick a rule</b>
+          <p class="ko">기사, 교재, 기획서에서 지켜야 할 문장 하나를 고릅니다.</p>
+          <p class="en">One sentence from an article, textbook, or plan that must hold.</p>
+        </li>
+        <li>
+          <span class="step-no mono">STEP 2</span>
+          <b class="ko">그대로 옮기기</b><b class="en">Write it as is</b>
+          <p class="ko">제일 먼저 떠오른 방식으로 컨트랙트를 씁니다.</p>
+          <p class="en">I write the contract the first way that comes to mind.</p>
+        </li>
+        <li>
+          <span class="step-no mono">STEP 3</span>
+          <b class="ko">깨뜨려 보기</b><b class="en">Break it</b>
+          <p class="ko">규칙이 깨지는 경우를 <code>test_Exploit_</code>로 남깁니다.</p>
+          <p class="en">Cases where the rule breaks become <code>test_Exploit_</code>.</p>
+        </li>
+        <li>
+          <span class="step-no mono">STEP 4</span>
+          <b class="ko">고치고 한계 적기</b><b class="en">Fix and note limits</b>
+          <p class="ko">고친 버전을 만들고, 아직 못 막은 건 <code>test_Limit_</code>로 남깁니다.</p>
+          <p class="en">A fixed version, plus <code>test_Limit_</code> for what it still can't stop.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== 프로젝트 ===== -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow mono">02 / projects</p>
+          <h2><span class="ko">프로젝트</span><span class="en">Projects</span></h2>
+        </div>
+        <div class="filters" role="tablist">
+          <button class="filter on" data-filter="all" type="button"><span class="ko">전체</span><span class="en">All</span></button>
+          <button class="filter" data-filter="own" type="button"><span class="ko">직접 주제</span><span class="en">My topics</span></button>
+          <button class="filter" data-filter="meetup" type="button"><span class="ko">밋업데이 실습</span><span class="en">Meetup labs</span></button>
+        </div>
+      </div>
+
+      <div class="bento">
+        <a class="card wide reveal" data-cat="own" href="https://github.com/Andrewpark-hub/tokenized-stock-backoffice-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🏦</span><span class="date mono">2026.11</span></div>
+          <h3>Tokenized Stock Backoffice</h3>
+          <p class="ko">Spring Boot 서버가 web3j로 제 토큰증권 컨트랙트를 호출하는 발행사 백오피스입니다. 투자자 명부는 DB에, 잔고는 체인에 두고 배당 기준일의 지급 명세를 만듭니다. 처음으로 만든 Java 저장소입니다.</p>
+          <p class="en">An issuer back office where a Spring Boot server calls my tokenized stock contract through web3j. Investor records stay in a DB, balances on chain, and it builds payout lists for the dividend record date. My first Java repo.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Java</span><span>Spring Boot</span><span>web3j</span><span>Anvil</span></div>
+            <span class="pass mono">✓ 8 tests</span>
+          </div>
+        </a>
+
+        <a class="card wide reveal" data-cat="own" href="https://github.com/Andrewpark-hub/kgold-trade-escrow-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🚢</span><span class="date mono">2026.10</span></div>
+          <h3>K-Gold Trade Escrow Lab</h3>
+          <p class="ko">수입사 결재선 3명 중 2명이 서명하면 수출사에게 정산되는 무역 에스크로입니다. 서명이 모인 뒤에 선적 서류를 바꿔도 정산되는 문제를 찾아서, 서명 내용에 서류 해시를 넣었습니다.</p>
+          <p class="en">A trade escrow that pays the exporter once 2 of 3 importer approvers sign. My first version still paid out after the shipping document was swapped, so I added the document hash to what gets signed.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Solidity</span><span>Foundry</span><span>EIP-712</span></div>
+            <span class="pass mono">✓ 20 tests</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="own" href="https://github.com/Andrewpark-hub/kgold-reserve-breaker-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🪙</span><span class="date mono">2026.10</span></div>
+          <h3>K-Gold Reserve Breaker Lab</h3>
+          <p class="ko">공모전에서 설계한 금 담보 토큰의 발행 한도, 보유고 증명, 회로차단기를 구현했습니다. 보유고 증명이 24시간 넘게 갱신되지 않으면 발행이 자동으로 멈춥니다.</p>
+          <p class="en">Mint cap, proof of reserve, and a circuit breaker for the gold-backed token I designed for a contest. Minting stops on its own if the reserve proof is older than 24 hours.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Solidity</span><span>Foundry</span></div>
+            <span class="pass mono">✓ 25 tests</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="own" href="https://github.com/Andrewpark-hub/stablecoin-freeze-zk-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🧊</span><span class="date mono">2026.10</span></div>
+          <h3>Stablecoin Freeze ZK Lab</h3>
+          <p class="ko">논문 주제인 스테이블코인 동결 절차에 커밋-리빌과 Groth16 증명을 붙여 봤습니다. 처음 만든 회로는 증명을 복사해서 다른 주소를 동결할 수 있었습니다.</p>
+          <p class="en">I added commit-reveal and a Groth16 proof to a stablecoin freeze process, the topic of my paper. My first circuit let anyone copy the proof and freeze a different address.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Circom</span><span>snarkjs</span><span>Solidity</span></div>
+            <span class="pass mono">✓ 11 tests</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="own" href="https://github.com/Andrewpark-hub/sec-tsv-tokenized-stock-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">📈</span><span class="date mono">2026.09</span></div>
+          <h3>SEC TSV Tokenized Stock Lab</h3>
+          <p class="ko">기사에 나온 SEC 토큰화 주식 면제 조건 4개를 문장 그대로 옮긴 버전과 고친 버전입니다. <code>transferFrom</code> 경로로 하루 한도의 40배가 체결되는 걸 확인했습니다.</p>
+          <p class="en">Four SEC tokenized stock exemption conditions from a news article, written literally and then fixed. Trades through <code>transferFrom</code> went 40 times over the daily cap.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Solidity</span><span>Foundry</span></div>
+            <span class="pass mono">✓ 13 tests</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="meetup" href="https://github.com/Andrewpark-hub/smart-contract-audit-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🛡️</span><span class="date mono">KISA #22</span></div>
+          <h3>Smart Contract Audit Lab</h3>
+          <p class="ko">교재에 나온 취약점 5종을 공격 컨트랙트와 고친 컨트랙트 한 쌍씩 만들고, Slither가 무엇을 놓치는지 표로 비교했습니다.</p>
+          <p class="en">Five textbook vulnerabilities, each as an attack and fixed contract pair, plus a table of what Slither caught and missed.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Solidity</span><span>Slither</span></div>
+            <span class="pass mono">✓ 10 tests</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="meetup" href="https://github.com/Andrewpark-hub/multichain-wallet-lab" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">👛</span><span class="date mono">KISA #21</span></div>
+          <h3>Multichain Wallet Lab</h3>
+          <p class="ko">니모닉에서 EVM 주소까지 라이브러리 없이 계산해 보고, EIP-1559 트랜잭션을 한 단계씩 조립해서 서명했습니다.</p>
+          <p class="en">Derived an EVM address from a mnemonic without a library, and built and signed an EIP-1559 transaction step by step.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Node.js</span><span>ethers.js</span></div>
+            <span class="pass mono muted">scripts</span>
+          </div>
+        </a>
+
+        <a class="card reveal" data-cat="meetup" href="https://github.com/Andrewpark-hub/indy-did-credential-demo" target="_blank" rel="noopener">
+          <div class="card-top"><span class="emoji">🆔</span><span class="date mono">KISA #20</span></div>
+          <h3>Indy DID Credential Demo</h3>
+          <p class="ko">로컬 Indy 네트워크를 Docker로 띄우고 DID 등록, 증명서 발급, 제출 검증까지 흐름을 따라가 봤습니다.</p>
+          <p class="en">Ran a local Indy network in Docker and followed the flow from DID registration to issuing and verifying a credential.</p>
+          <div class="card-foot">
+            <div class="chips"><span>Python</span><span>Indy</span><span>Docker</span></div>
+            <span class="pass mono muted">scripts</span>
+          </div>
+        </a>
+      </div>
+      <p class="note reveal">
+        <span class="ko">테스트 수는 각 저장소에서 직접 실행해 확인한 값입니다. 모든 저장소는 학습용이고 실제 서비스와 연결되어 있지 않습니다.</span>
+        <span class="en">Test counts come from running each repo myself. All repos are for learning and are not connected to any real service.</span>
+      </p>
+    </section>
+
+    <!-- ===== 경험 ===== -->
+    <section class="section" id="journey">
+      <p class="eyebrow mono reveal">03 / journey</p>
+      <h2 class="reveal"><span class="ko">경험</span><span class="en">Journey</span></h2>
+      <div class="journey">
+        <ul class="timeline reveal">
+          <li class="now">
+            <span class="when mono">2026.11 ~ 12</span>
+            <b class="ko">iM뱅크 미래내일 일경험 프로젝트형 1기</b><b class="en">iM Bank Work Experience Program, Project Track</b>
+            <p class="ko">AI 트렌드세터. AI 에이전트 금융서비스 트렌드 분석과 서비스 기획 (8주)</p>
+            <p class="en">AI Trendsetter. Researching AI agent financial services and planning a service (8 weeks)</p>
+          </li>
+          <li>
+            <span class="when mono">2026.07 ~</span>
+            <b class="ko">순천향대 핀테크랩 학부연구생</b><b class="en">Undergraduate Researcher, SCH Fintech Lab</b>
+            <p class="ko">스테이블코인 동결 권한 논문 작성, 블록체인과 토큰증권 세미나</p>
+            <p class="en">Writing a paper on stablecoin freeze powers, blockchain and tokenized securities seminars</p>
+          </li>
+          <li>
+            <span class="when mono">2026.09</span>
+            <b class="ko">블록체인 밋업데이 20~22회차 수료</b><b class="en">KISA Blockchain Meetup Day #20 to #22</b>
+            <p class="ko">한국인터넷진흥원, DID / Wallet / 보안 과정 (각 7시간)</p>
+            <p class="en">Korea Internet &amp; Security Agency, DID / Wallet / Security (7 hours each)</p>
+          </li>
+          <li>
+            <span class="when mono">2025.02 ~ 2026.08</span>
+            <b class="ko">육군 병장 만기 전역</b><b class="en">Republic of Korea Army, Sergeant</b>
+            <p class="ko">모범분대장 표창, 화랑훈련 유공 표창</p>
+            <p class="en">Commendations as model squad leader and for the Hwarang exercise</p>
+          </li>
+          <li>
+            <span class="when mono">2025.03 ~</span>
+            <b class="ko">순천향대학교 컴퓨터소프트웨어공학과</b><b class="en">Soonchunhyang University, Computer Software Engineering</b>
+            <p class="ko">3학년, 경제금융학과 복수전공 예정 (2027.03 ~)</p>
+            <p class="en">3rd year, adding Economics &amp; Finance as a double major from March 2027</p>
+          </li>
+          <li>
+            <span class="when mono">2023.03 ~ 2025.02</span>
+            <b class="ko">평택대학교 융합소프트웨어학과</b><b class="en">Pyeongtaek University, Convergence Software</b>
+            <p class="ko">수료 후 순천향대로 편입. 학점 4.08 / 4.5, CT경진대회 3등 (신입생용 AI 챗봇)</p>
+            <p class="en">Transferred to Soonchunhyang after two years. GPA 4.08 / 4.5, 3rd place in CT Contest (AI chatbot for freshmen)</p>
+          </li>
+        </ul>
+
+        <div class="ideas reveal">
+          <p class="ideas-title mono"><span class="ko">기획과 공모전</span><span class="en">Plans &amp; contests</span></p>
+          <div class="idea">
+            <b>🏠 <span class="ko">전세지킴체인</span><span class="en">Jeonse Guard Chain</span></b>
+            <p class="ko">보증금을 에스크로에 두고 등기 변동을 감시하는 전세사기 예방 플랫폼 기획 (2026.10)</p>
+            <p class="en">A plan to prevent rental deposit fraud with an escrow and registry change alerts (Oct 2026)</p>
+          </div>
+          <div class="idea">
+            <b>🏬 Local-Link</b>
+            <p class="ko">공실 상가를 토큰증권으로 나눠 소액 투자하는 캡스톤 졸업작품, 핀테크 아이디어 공모전 심사 중</p>
+            <p class="en">Capstone project splitting empty shops into tokenized securities for small investors, under contest review</p>
+          </div>
+          <div class="idea">
+            <b>🔎 <span class="ko">KISA 위험지갑 인텔리전스</span><span class="en">KISA Risky Wallet Intelligence</span></b>
+            <p class="ko">피싱에 쓰인 지갑 주소를 모아 거래소, 금융권과 공유하는 체계 제안 (결과 11월 말)</p>
+            <p class="en">A proposal to share phishing wallet addresses with exchanges and banks (results in late November)</p>
+          </div>
+          <div class="idea">
+            <b>🪙 <span class="ko">K-Gold 설계</span><span class="en">K-Gold design</span></b>
+            <p class="ko">금 1그램 = 토큰 1개인 B2B 정산 설계. 이후 위의 K-Gold 랩 두 개로 직접 구현</p>
+            <p class="en">A B2B settlement design where 1 token is 1 gram of gold, later built as the two K-Gold labs above</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 기록 ===== -->
+    <section class="section" id="writing">
+      <p class="eyebrow mono reveal">04 / writing</p>
+      <h2 class="reveal"><span class="ko">링크드인 학습 기록</span><span class="en">Study notes on LinkedIn</span></h2>
+      <ul class="posts reveal">
+        <li><span class="mono">10.28</span><span class="ko">무역 에스크로를 만들며 본 "기한 규칙이 누구에게 유리한가"</span><span class="en">Who a deadline rule favors, from building a trade escrow</span></li>
+        <li><span class="mono">10.11</span><span class="ko">스테이블코인 동결 절차에 영지식 증명을 붙여 본 과정</span><span class="en">Adding a zero-knowledge proof to a stablecoin freeze</span></li>
+        <li><span class="mono">10.07</span><span class="ko">K-Gold 발행 한도와 회로차단기 구현</span><span class="en">Building the K-Gold mint cap and circuit breaker</span></li>
+        <li><span class="mono">09.26</span><span class="ko">USDT, USDC의 동결 권한을 코드로 읽어 보기</span><span class="en">Reading USDT and USDC freeze powers in code</span></li>
+        <li><span class="mono">09.18</span><span class="ko">SEC 토큰화 주식 규제 문장을 Solidity로 옮기기</span><span class="en">Turning SEC tokenized stock rules into Solidity</span></li>
+      </ul>
+      <a class="more reveal" href="https://www.linkedin.com/in/%EC%A0%95%EC%96%B8-%EB%B0%95-975ab1323/recent-activity/all/" target="_blank" rel="noopener">
+        <span class="ko">글 전체 보기 ↗</span><span class="en">See all posts ↗</span>
+      </a>
+    </section>
+
+    <!-- ===== 연락 ===== -->
+    <section class="contact reveal">
+      <h2><span class="ko">이야기 나눠요</span><span class="en">Let's talk</span></h2>
+      <p class="ko">블록체인, 토큰증권, 스테이블코인 이야기라면 언제든 환영합니다. 링크드인 메시지로 연락 주세요.</p>
+      <p class="en">Happy to talk about blockchain, tokenized securities, or stablecoins. Message me on LinkedIn.</p>
+      <div class="hero-btns center">
+        <a class="btn primary" href="https://www.linkedin.com/in/%EC%A0%95%EC%96%B8-%EB%B0%95-975ab1323/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/Andrewpark-hub" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">© 2026 Jungun Park</footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
