@@ -477,6 +477,8 @@ h2 {
 .when { font-size: 12px; color: var(--accent); }
 .timeline b { display: block; font-size: 17px; margin-top: 2px; }
 .timeline p { color: var(--muted); font-size: 14px; margin-top: 2px; }
+.timeline p a { color: var(--accent); font-size: 13px; white-space: nowrap; }
+.timeline p a:hover { text-decoration: underline; }
 
 .ideas {
   padding: 26px;
