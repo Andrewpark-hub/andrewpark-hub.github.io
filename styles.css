@@ -566,6 +566,8 @@ h2 {
   .section { padding-top: 80px; }
   .posts li { flex-direction: column; gap: 2px; }
   .contact { margin-top: 80px; padding: 48px 20px; }
+  .contact .hero-btns { gap: 8px; }
+  .contact .btn { padding: 10px 14px; font-size: 14px; }
 }
 
 /* 움직임 줄이기 설정을 켠 사람에게는 애니메이션을 끔 */
